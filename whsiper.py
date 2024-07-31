@@ -82,7 +82,7 @@ if __name__ == "__main__":
     max_words_per_line = 3
     language = "en"
     model_name = "base"
-    prompt = "words in video may be cyde.xyz, haru client, MCP, hacked client, bedwars, skywars, Minecraft, %appdata%, cyde pvp"
+    prompt = "words in video may be cyde.xyz, haru client, MCP, hacked client, bedwars, skywars, Minecraft, %appdata%, pvp, rar, .Minecraft, versions, anti-cheat"
     pause_threshold = 1.0
 
     transcribe_audio(

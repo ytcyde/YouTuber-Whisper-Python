@@ -76,13 +76,15 @@ def transcribe_audio(input_file, output_file, output_directory, max_words_per_li
     print(f"Transcription saved to: {output_path}")
 
 if __name__ == "__main__":
-    input_file = r"C:\Users\PC\Videos\Recordings\Manual Recording\HaruMCP\start.mp4"
-    output_file = "output.srt"
-    output_directory = r"C:\Users\PC\Videos\Recordings\Manual Recording\HaruMCP"
+    input_file = input("Enter the path to the input audio/video file: ")
+    output_directory = input("Enter the output directory: ")
+    output_file = input("Enter the desired output file name (with extension, e.g., output.srt): ")
+
+    # Hardcoded parameters
     max_words_per_line = 3
     language = "en"
     model_name = "base"
-    prompt = "words in video may be cyde.xyz, haru client, MCP, hacked client, bedwars, skywars, Minecraft, %appdata%, pvp, rar, .Minecraft, versions, anti-cheat"
+    prompt = "words in video may be cyde.xyz,auto clicker, toad clicker, mouse_event, when mouse is visible, Minecraft Berock"
     pause_threshold = 1.0
 
     transcribe_audio(

@@ -76,15 +76,15 @@ def transcribe_audio(input_file, output_file, output_directory, max_words_per_li
     print(f"Transcription saved to: {output_path}")
 
 if __name__ == "__main__":
-    input_file = input("Enter the path to the input audio/video file: ")
-    output_directory = input("Enter the output directory: ")
-    output_file = input("Enter the desired output file name (with extension, e.g., output.srt): ")
+    input_file = input("Enter the path to the input audio/video file: ").strip('\"')
+    output_directory = input("Enter the output directory: ").strip('\"')
+    output_file = input("Enter the desired output file name (with extension, e.g., output.srt): ").strip('\"')
 
     # Hardcoded parameters
     max_words_per_line = 3
     language = "en"
     model_name = "base"
-    prompt = "words in video may be cyde.xyz,auto clicker, toad clicker, mouse_event, when mouse is visible, Minecraft Berock"
+    prompt = "words in video may be cyde.xyz,auto crystal, auto totem, click crystals, anchor macro, fastEXP, middle click pearl, %appdata%"
     pause_threshold = 1.0
 
     transcribe_audio(

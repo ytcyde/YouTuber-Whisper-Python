@@ -83,7 +83,7 @@ if __name__ == "__main__":
     # Hardcoded parameters
     max_words_per_line = 3
     language = "en"
-    model_name = "base"
+    model_name = "medium"
     prompt = "words in video may be cyde.xyz,auto crystal, auto totem, click crystals, anchor macro, fastEXP, middle click pearl, %appdata%"
     pause_threshold = 1.0
 
